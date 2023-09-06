@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindIDActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="250dp"
+                android:ems="10"
+                android:fontFamily="@font/font_base"
+                android:hint="이메일 주소"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_base"
+                android:minHeight="48dp"
+                android:text="인증번호 받기" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:fontFamily="@font/font_base"
+            android:hint="인증번호 6자리 숫자 입력"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSubmitCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제출" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyToDo</string>
+    <string name="str_back_pressed">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="str_question_0">가장 좋아하는 음식은?</string>
+    <string name="str_question_1">졸업한 초등학교의 이름은?</string>
+    <string name="str_question_2">가장 존경하는 인물의 이름은?</string>
+    <string name="str_question_3">가장 소중한 물건은?</string>
+</resources>

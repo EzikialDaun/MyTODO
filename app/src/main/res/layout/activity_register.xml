@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="100dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editEmailReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250dp"
+                android:ems="10"
+                android:fontFamily="@font/font_base"
+                android:hint="이메일 주소"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnCheckEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_base"
+                android:minHeight="48dp"
+                android:text="중복검사" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editPWReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/font_base"
+            android:hint="새 비밀번호"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtSecurity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_base"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:text="보안 수준: 낮음" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_base"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:text="소문자와 숫자 포함, 5자 이상" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_base"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:text="허용되는 특수문자: !, @, #, $, %, ^, &amp;, *" />
+
+            <CheckBox
+                android:id="@+id/chkVisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/font_base"
+                android:text="비밀번호 보이기" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editCheckPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/font_base"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Spinner
+            android:id="@+id/spinQuestionReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editAnswerReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/font_base"
+            android:hint="답변"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSubmitReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_base"
+            android:minHeight="48dp"
+            android:text="회원가입" />
+    </LinearLayout>
+</RelativeLayout>
